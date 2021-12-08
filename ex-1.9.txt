@@ -1,0 +1,20 @@
+(+ 4 5)
+(inc (+ 3 5)
+(inc (inc (+ 2 5)))
+(inc (inc (inc (+ 1 5))))
+(inc (inc (inc (inc (+ 0 5)))))
+(inc (inc (inc (inc 5))))
+(inc (inc (inc 6)))
+(inc (inc 7))
+(inc 8)
+9
+
+recursive, call self within another expression
+
+a=4, b=5 --> (+ 3 6)
+a=3, b=6 --> (+ 2 7)
+a=2, b=7 --> (+ 1 8)
+a=1, b=8 --> (+ 0 9)
+a=0, b=9 --> 9
+
+iterative, call self at top
